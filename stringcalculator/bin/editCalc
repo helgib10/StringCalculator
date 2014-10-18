@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nano src/main/java/is/ru/stringcalculator/Calculator.java
