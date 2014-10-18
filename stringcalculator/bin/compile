@@ -1,3 +1,3 @@
 #!/bin/bash
 
-jacav src/main/java/is/stringcalculator7*.java -d classes
+javac src/main/java/is/ru/stringcalculator/*.java -d classes
