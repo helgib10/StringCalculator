@@ -1,7 +1,9 @@
 package is.ru.stringcalculator;
 
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import static org.hamcrest.Matchers.*;
 
 public class Calculator {
 
@@ -9,13 +11,21 @@ public class Calculator {
 		if (text.equals(""))
 			return 0;
 		int sum = 0;
-		String[] numbers = split(text);
+		List<Integer> numbers = split(text);
+		List<Integer> negatives = filter(lessThan(0), numbers);
+		if(negatives.length > 0)
+		{
+			throw new RuntimeException("Negatives not allowed: " + join(negatives));
+		}
 		for (int i = 0; i < numbers.length; i++)
 		{
 			sum = sum + toInt(numbers[i]);
 		}
 		return sum;
 	}
+
+	private static String[] negative (String text){
+		if(
 
 	private static String[] split (String text){
 		if(text.startsWith("//")){

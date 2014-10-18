@@ -1,3 +1,3 @@
 #!/bin/bash
 
-javac -classpath "classes:lib/regex.jar" src/main/java/is/ru/stringcalculator/*.java -d classes
+javac -classpath "classes:lib/regex.jar:lib/hamcrest-all-1.3.jar:lib/java-util-1.3.1.jar" src/main/java/is/ru/stringcalculator/*.java -d classes
