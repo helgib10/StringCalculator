@@ -1,7 +1,7 @@
 package is.ru.stringcalculator;
 
-import ch.lambdaj.fucnction.convert.Converter;
-import static ch.lambdaj.Labda.*;
+import ch.lambdaj.function.convert.Converter;
+import static ch.lambdaj.Lambda.*;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
