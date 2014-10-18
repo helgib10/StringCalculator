@@ -21,4 +21,8 @@ public class CalculatorTest {
 	public void testStringWithTwoVariables (){
 		assertEquals(3, Calculator.add("1,2"));
 	}
+	@Test
+	public void testStringWithMultipleVariables() {
+		assertEquals(6, Calculator.add("1,2,3"));
+	}
 }
