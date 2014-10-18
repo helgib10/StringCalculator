@@ -51,6 +51,7 @@ public class CalculatorTest {
 			assertEquals("Negatives not allowed: -4, -5", ex.getMessage());
 		}
 	}
+	@Test
 	public void testThatBigIntegersAreLeftOut() {
 		assertEquals(2, Calculator.add("1001,2"));
 	}

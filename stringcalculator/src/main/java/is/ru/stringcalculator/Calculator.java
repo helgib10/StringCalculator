@@ -22,7 +22,8 @@ public class Calculator {
 		}
 		for (int i = 0; i < tokens.length; i++)
 		{
-			sum = sum + toInt(tokens[i]);
+			if (toInt(tokens[i]) < 1000)
+				sum = sum + toInt(tokens[i]);
 		}
 		return sum;
 	}
