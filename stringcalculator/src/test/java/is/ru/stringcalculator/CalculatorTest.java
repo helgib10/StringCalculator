@@ -1,6 +1,6 @@
 package stringCalculator;
 
-import static org.juni.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class CalculatorTest {
