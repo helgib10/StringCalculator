@@ -1,7 +1,7 @@
-package calculator;
+package stringCalculator;
 
-import org.junit.*;
-import static org.junit.Assert.*;
+import static org.juni.Assert.assertEquals;
+import org.junit.Test;
 
 public class CalculatorTest {
 	@Test
