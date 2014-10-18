@@ -25,4 +25,8 @@ public class CalculatorTest {
 	public void testStringWithMultipleVariables() {
 		assertEquals(6, Calculator.add("1,2,3"));
 	}
+	@Test
+	public void testStringWithNewLineSeporators() {
+		assertEquals(6, Calculator.add("1\n2,3"));
+	}
 }
